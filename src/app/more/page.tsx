@@ -3,12 +3,7 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion";
-import {
-  FaAward,
-  FaNewspaper,
-  FaGraduationCap,
-  FaBriefcase,
-} from "react-icons/fa";
+import { FaAward, FaNewspaper, FaGraduationCap } from "react-icons/fa";
 
 export default function MorePage() {
   const awards = [
@@ -118,7 +113,7 @@ export default function MorePage() {
             </div>
 
             <div className="space-y-8">
-              {education.map((item, index) => (
+              {education.map((item) => (
                 <div
                   key={item.id}
                   className="relative pl-8 border-l-2 border-blue-200"
